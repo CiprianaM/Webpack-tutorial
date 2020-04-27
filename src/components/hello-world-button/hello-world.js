@@ -2,7 +2,7 @@
 //   console.log('Hello world!')
 // }
 
-import './hello-world.css';
+import './hello-world.scss';
 //refactor to a component - no React used!
 export class HelloWorldButton {
   render () {
