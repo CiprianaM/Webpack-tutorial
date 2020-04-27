@@ -21,3 +21,6 @@ Setting up empty project:
 16. add publicPath to webpack config, and run npm run build again
 17. refactor hello-world from function to component, and make it render a button
 18. run webpack again in the terminal, and check the browser
+19. add styles in our hello-world.css file and import it in the js file
+20. add the rule with the loaders in webpack config
+21. install loaders npm i style-loader css-loader --save-dev
