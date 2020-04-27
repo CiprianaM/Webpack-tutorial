@@ -33,6 +33,13 @@ module.exports = {
         use: [
           'file-loader'
         ]
+      },
+      //add loaders for css - multiple loaders will be used
+      {
+        test: /\.(css)$/,
+        use: [
+          'stye-loader', 'css-loader'
+        ]
       }
     ]
   }
