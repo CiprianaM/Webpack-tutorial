@@ -19,3 +19,5 @@ Setting up empty project:
 14. run webpack again npm run build
 15. image will not be displayed because the src is only the name of the bundled file, not the path
 16. add publicPath to webpack config, and run npm run build again
+17. refactor hello-world from function to component, and make it render a button
+18. run webpack again in the terminal, and check the browser
