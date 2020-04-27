@@ -77,7 +77,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "dist/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -91,9 +91,12 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _hello_world__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _add_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+
 
 
 Object(_hello_world__WEBPACK_IMPORTED_MODULE_0__["helloWorld"])();
+Object(_add_image__WEBPACK_IMPORTED_MODULE_1__["addImage"])();
 
 /***/ }),
 /* 1 */
@@ -105,6 +108,35 @@ __webpack_require__.r(__webpack_exports__);
 function helloWorld () {
   console.log('Hello world!')
 }
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addImage", function() { return addImage; });
+/* harmony import */ var _doggie_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
+//import the image url
+
+
+//create img element and append it to the DOM
+function addImage () {
+  const img = document.createElement('img');
+  img.alt = 'doggie';
+  img.width = 300;
+  img.src = _doggie_jpg__WEBPACK_IMPORTED_MODULE_0__["default"];
+  const body = document.querySelector('body');
+  body.appendChild(img);
+}
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "b068800c526307330b0472028448b2d7.jpg");
 
 /***/ })
 /******/ ]);

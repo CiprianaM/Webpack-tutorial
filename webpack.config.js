@@ -10,7 +10,10 @@ module.exports = {
   output: {
     filename: "bundle.js",
     //instead of "dist", we add path.resolve which will provide as output the absolute path
-    path: path.resolve(__dirname, './dist')
+    path: path.resolve(__dirname, './dist'),
+    //publicPath is where webpack will look for the additional bundled resources
+    //if the site were deployed to the internet, you would have http://my-site.com/ as a publicPath
+    publicPath: 'dist/'
   },
   mode: "none",
   //module is where we specify the rules for importing various files, including images
