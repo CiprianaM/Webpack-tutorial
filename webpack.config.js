@@ -51,6 +51,19 @@ module.exports = {
           //html page - visible when we inspect the browser
           'style-loader', 'css-loader', 'sass-loader'
         ]
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            //presets: compiles ECMA script 6, 7, 8 and 9 down to 5
+            presets: ['@babel/env'],
+            //plugins: allows us to use features which are currently not supported by all browsers
+            plugins: ['transform-class-properties']
+          }
+        }
       }
     ]
   }

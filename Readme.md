@@ -28,3 +28,6 @@ Setting up empty project:
 23. add the scss rule to the webpack config
 24. install sass loader and node-sass (node-sass allows you to compile sass at high speed) npm sass-loader npm-sass --save-dev
 25. run webpack again and check browser
+26. create javascript rule in the webpack config (in order to use newest capabilities of JS) - this will use babel
+27. install new dependencies npm i @babel/core babel-loader @babel/preset-env babel-plugin-transform-class-properties --save-dev
+28. run webpack again
