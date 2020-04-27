@@ -24,3 +24,4 @@ Setting up empty project:
 19. add styles in our hello-world.css file and import it in the js file
 20. add the rule with the loaders in webpack config
 21. install loaders npm i style-loader css-loader --save-dev
+22. change css to scss
