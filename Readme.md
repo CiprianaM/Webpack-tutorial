@@ -25,3 +25,6 @@ Setting up empty project:
 20. add the rule with the loaders in webpack config
 21. install loaders npm i style-loader css-loader --save-dev
 22. change css to scss
+23. add the scss rule to the webpack config
+24. install sass loader and node-sass (node-sass allows you to compile sass at high speed) npm sass-loader npm-sass --save-dev
+25. run webpack again and check browser

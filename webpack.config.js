@@ -40,6 +40,17 @@ module.exports = {
         use: [
           'style-loader', 'css-loader'
         ]
+      },
+      {
+        test: /\.(scss)$/,
+        use: [
+          //webpack reads loaders from right to left
+          //first, it will invoke the sass-loader, and convert the sass to css
+          //then, it will invoke the css-loader, and will take the css and convert it to the JS representation
+          //finally, it will invoke style-loader, which will create style text inside our 
+          //html page - visible when we inspect the browser
+          'style-loader', 'css-loader', 'sass-loader'
+        ]
       }
     ]
   }
